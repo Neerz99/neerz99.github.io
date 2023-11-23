@@ -424,7 +424,6 @@ textarea {
     height: 6vh;
     border: solid 1px #b6b6b6;
     border-radius: 16px;
-    margin-top: 4vh;
     margin-bottom: 4vh;
     transition: background 0.2s ease-in-out;
     cursor: pointer;

@@ -6,13 +6,16 @@ document.querySelectorAll('.menuItems li a').forEach(item => {
 });
 
 function showMore() {
+    let showMoreBtn = document.querySelector('#showMoreBtn');
     let skills = ['skillSql', 'skillPython', 'skillLinux', 'skillApi'];
     skills.forEach(skill => {
         let element = document.querySelector(`.${skill}`);
         if (element.style.display !== 'block') {
             element.style.display = 'block';
+            showMoreBtn.innerHTML = 'Voir moins';
         } else {
             element.style.display = 'none';
+            showMoreBtn.innerHTML = 'Voir plus';
         }
     });
 }
